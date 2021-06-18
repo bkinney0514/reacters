@@ -1,8 +1,6 @@
 import {React, useReducer, useState} from 'react';
 import SoloReqs from './OneEmpReqs';
 
-
-
 function Employee(props) {
     // const [name, setName] = useState("")
     const [reason, setReason] = useState("")
@@ -18,14 +16,8 @@ function Employee(props) {
         setAmount(e.target.value)
     }
 
-    
-   
-
-
     async function CreateRmb(reason, amount) {
 
- 
-       
         console.log(reason)
         console.log(amount)
         const newRmb = {
@@ -57,14 +49,10 @@ function Employee(props) {
             <input type="button" id="rmbButton" value="Submit" onClick={()=>CreateRmb(reason,amount)}/>
             </fieldset>
             </form>
-
+            
             <SoloReqs user={props.user} setUser={props.setUser}/>
-
-
         </div>
     )
-
-
 }
 
 export default Employee;

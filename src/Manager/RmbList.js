@@ -22,8 +22,8 @@ const PendingRmbList = () => {
                     <tr>
                         <th>ID</th>
                         <th>Name</th>
-                        <th>Reason</th>
                         <th>Amount</th>
+                        <th>Reason</th>
                         <th>Status</th>
                         <th>Action</th>
                     </tr>
